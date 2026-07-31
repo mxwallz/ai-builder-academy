@@ -1028,6 +1028,1036 @@
     </div>
   </section>
 
+   html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI Builder Academy | Ages 13-15</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  html{scroll-behavior:smooth;}
+  body{margin:0;padding:0;background:#ffffff;-webkit-font-smoothing:antialiased;}
+  *{box-sizing:border-box;}
+  a{color:#2f5fe0;text-decoration:none;}
+  a:hover{color:#1d47b8;}
+  input{font-family:inherit;}
+  @keyframes pulseDot{0%,100%{opacity:1}50%{opacity:.3}}
+  @media (max-width:640px){
+    [data-m="cohortbar"]{display:none!important;}
+    [data-m="navcta"]{display:none!important;}
+    [data-m="navrow"]{justify-content:center!important;}
+    [data-m="brand"]{font-size:20px!important;}
+    [data-m="brandmark"]{width:34px!important;height:34px!important;}
+    [data-m="strip"]{gap:12px!important;padding-top:18px!important;padding-bottom:18px!important;}
+    [data-m="striplabel"]{width:100%!important;text-align:center!important;}
+    [data-m="weeks"]{display:flex!important;overflow-x:auto!important;gap:8px!important;margin-bottom:20px!important;-webkit-overflow-scrolling:touch;}
+    [data-m="weeks"] > div{flex:0 0 auto!important;min-width:132px!important;padding:11px 13px!important;}
+    [data-m="howgrid"]{gap:18px!important;}
+    [data-m="founders"]{order:-1!important;flex-direction:row!important;gap:12px!important;}
+    [data-m="founders"] > div{flex:1 1 0!important;min-width:0!important;padding-top:0!important;border-top:0!important;}
+    [data-m="founders"] img{aspect-ratio:1/1!important;}
+  }
+  @keyframes riseIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  @keyframes sweep{0%{transform:translateX(-100%)}100%{transform:translateX(320%)}}
+
+  @media (max-width:640px){
+    [data-m="cmprow"]{flex-direction:column!important;flex-wrap:nowrap!important;align-items:stretch!important;gap:10px!important;}
+    [data-m="cmpold"],[data-m="cmpnew"]{flex:0 0 auto!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;}
+    [data-m="cmparrow"]{transform:rotate(90deg);margin:2px auto!important;}
+    [data-m="cmpold"]{background:rgba(180,72,63,.05);border:1px solid rgba(180,72,63,.16);border-radius:14px;padding:14px 16px!important;}
+    [data-m="cmpnew"]{background:#ffffff;border:1px solid rgba(31,157,107,.28);border-radius:14px;padding:14px 16px!important;box-shadow:0 6px 18px rgba(16,25,46,.05);}
+  }
+</style>
+<style>
+  sc-if{display:contents;}
+  [hidden]{display:none!important;}
+</style>
+</head>
+<body>
+<div style="font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;color:#10192e;line-height:1.55;font-size:17px;background:#fff;overflow-x:hidden;">
+
+  <sc-if data-if="showCohortBar">
+    <div data-m="cohortbar" style="background:#10192e;color:#cdd7ea;font-size:13px;text-align:center;padding:9px 20px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;">
+      <span style="width:6px;height:6px;border-radius:50%;background:#1f9d6b;box-shadow:0 0 10px #1f9d6b;animation:pulseDot 2s infinite;display:block;"></span>
+      3 spots left in the current cohort.
+    </div>
+  </sc-if>
+
+  <header style="position:relative;background:#080d18;overflow:hidden;">
+    <div style="position:absolute;inset:0;opacity:.34;">
+      <div style="width:100%;height:100%;background:linear-gradient(135deg,#0e1626,#1b2a4a 55%,#0e1626);"></div>
+    </div>
+    <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(8,13,24,.72) 0%,rgba(8,13,24,.58) 45%,rgba(8,13,24,.94) 100%);"></div>
+    <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(760px 420px at 50% 6%,rgba(47,95,224,.22),transparent 66%);"></div>
+
+    <nav style="position:relative;z-index:10;background:transparent;">
+      <div data-m="navrow" style="max-width:1120px;margin:0 auto;padding:11px clamp(16px,4.5vw,24px);display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+        <div data-m="brand" style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:clamp(15px,3.6vw,17px);letter-spacing:-.015em;min-width:0;color:#fff;">
+          <span data-m="brandmark" style="width:28px;height:28px;border-radius:9px;background:linear-gradient(135deg,#2f5fe0,#7a5cf0);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(47,95,224,.32);flex-shrink:0;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 16 11 10 5 4"></polyline><polyline points="13 16 19 10 13 4"></polyline></svg>
+          </span>
+          AI Builder Academy
+        </div>
+        <a data-m="navcta" href="#quiz" style="background:linear-gradient(120deg,#2f5fe0,#7a5cf0);color:#fff;padding:9px clamp(13px,3.5vw,20px);border-radius:9px;font-weight:600;font-size:clamp(13px,3.4vw,14.5px);display:block;white-space:nowrap;">Find their build archetype</a>
+      </div>
+    </nav>
+    <div style="position:relative;pointer-events:none;max-width:1120px;margin:0 auto;padding:clamp(46px,7vw,92px) clamp(16px,4.5vw,24px) clamp(52px,7vw,84px);text-align:center;">
+      <div style="display:inline-flex;align-items:center;gap:10px;padding:9px 18px;border:1px solid rgba(255,255,255,.2);border-radius:100px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#cdd7ea;background:rgba(255,255,255,.06);margin-bottom:26px;">
+        <span style="width:6px;height:6px;border-radius:50%;background:#8fb0ff;display:block;"></span>
+        Ages 13-15 &middot; Application only
+      </div>
+      <h1 style="font-size:clamp(36px,5.8vw,66px);line-height:1.04;letter-spacing:-.035em;font-weight:700;max-width:19ch;margin:0 auto 22px;color:#fff;text-wrap:balance;">
+        Will your kid even be <span style="color:#8fb0ff;">competitive</span> in the world they graduate into?
+      </h1>
+      <p style="font-size:clamp(17px,2vw,21px);color:#b7c2d6;max-width:56ch;margin:0 auto;text-wrap:pretty;">
+        The 12-week program where 13 to 15 year olds stop using AI to dodge homework and start building real things with it.
+      </p>
+      <div style="display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:34px;">
+        <a href="#enroll" style="pointer-events:auto;background:linear-gradient(120deg,#2f5fe0,#7a5cf0);color:#fff;font-weight:600;font-size:16px;padding:16px 32px;border-radius:11px;box-shadow:0 10px 32px rgba(47,95,224,.34);display:block;">Book a discovery call</a>
+      </div>
+    </div>
+
+  </header>
+
+  <div style="background:#fff;border-bottom:1px solid rgba(16,25,46,.08);">
+    <div data-m="strip" style="max-width:1120px;margin:0 auto;padding:22px clamp(16px,4.5vw,24px);display:flex;align-items:center;justify-content:center;gap:clamp(14px,3vw,30px);flex-wrap:wrap;">
+      <span data-m="striplabel" style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9aa4b8;">Mentors &amp; faculty from</span>
+      <span style="font-size:17px;font-weight:700;letter-spacing:-.01em;color:#5c6880;">MIT</span>
+      <span style="font-size:17px;font-weight:700;letter-spacing:-.01em;color:#5c6880;">Harvard</span>
+      <span style="font-size:17px;font-weight:700;letter-spacing:-.01em;color:#5c6880;">Stanford</span>
+      <span style="font-size:17px;font-weight:700;letter-spacing:-.01em;color:#5c6880;">Google</span>
+      <span style="font-size:17px;font-weight:700;letter-spacing:-.01em;color:#5c6880;">Meta</span>
+      <span style="font-size:17px;font-weight:700;letter-spacing:-.01em;color:#5c6880;">Y Combinator</span>
+    </div>
+  </div>
+
+  <section style="padding:clamp(54px,7vw,92px) 0;background:#f4f7fc;border-top:1px solid rgba(16,25,46,.07);border-bottom:1px solid rgba(16,25,46,.07);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 clamp(16px,4.5vw,24px);">
+      <div style="max-width:none;margin:0 auto 44px;text-align:center;">
+        <h2 style="font-size:clamp(27px,3.6vw,42px);line-height:1.1;letter-spacing:-.025em;font-weight:700;margin:0 0 14px;text-wrap:balance;">Banning it is the old way.</h2>
+
+      </div>
+
+      <div style="max-width:940px;margin:0 auto;">
+        <div data-m="cmprow" style="display:flex;flex-wrap:wrap;gap:clamp(10px,2.4vw,28px);align-items:center;padding:clamp(18px,3vw,26px) 0;border-top:1px solid rgba(16,25,46,.1);">
+          <div data-m="cmpold" style="flex:1 1 230px;min-width:0;">
+            <div style="font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#b4483f;margin-bottom:7px;">The old way</div>
+            <div style="font-size:clamp(16px,2.1vw,19px);font-weight:600;letter-spacing:-.01em;color:#5c6880;margin-bottom:4px;">Catch them cheating, ban the tool</div>
+            <p style="font-size:14.5px;color:#7a869e;margin:0;line-height:1.5;">They keep using it anyway and learn to hide it from you.</p>
+          </div>
+          <span data-m="cmparrow" style="width:30px;height:30px;border-radius:50%;background:#10192e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M13 6l6 6-6 6"></path></svg>
+          </span>
+          <div data-m="cmpnew" style="flex:1 1 230px;min-width:0;">
+            <div style="font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1f9d6b;margin-bottom:7px;">The new way</div>
+            <div style="font-size:clamp(16px,2.1vw,19px);font-weight:700;letter-spacing:-.015em;color:#10192e;margin-bottom:4px;">A game their friends actually play</div>
+            <p style="font-size:14.5px;color:#4a5875;margin:0;line-height:1.5;">Designed and built by them, then handed to the group chat.</p>
+          </div>
+        </div>
+        <div data-m="cmprow" style="display:flex;flex-wrap:wrap;gap:clamp(10px,2.4vw,28px);align-items:center;padding:clamp(18px,3vw,26px) 0;border-top:1px solid rgba(16,25,46,.1);">
+          <div data-m="cmpold" style="flex:1 1 230px;min-width:0;">
+            <div style="font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#b4483f;margin-bottom:7px;">The old way</div>
+            <div style="font-size:clamp(16px,2.1vw,19px);font-weight:600;letter-spacing:-.01em;color:#5c6880;margin-bottom:4px;">More tutoring for grades</div>
+            <p style="font-size:14.5px;color:#7a869e;margin:0;line-height:1.5;">Nothing left behind when it ends except a worksheet stack.</p>
+          </div>
+          <span data-m="cmparrow" style="width:30px;height:30px;border-radius:50%;background:#10192e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M13 6l6 6-6 6"></path></svg>
+          </span>
+          <div data-m="cmpnew" style="flex:1 1 230px;min-width:0;">
+            <div style="font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1f9d6b;margin-bottom:7px;">The new way</div>
+            <div style="font-size:clamp(16px,2.1vw,19px);font-weight:700;letter-spacing:-.015em;color:#10192e;margin-bottom:4px;">An app they thought up themselves</div>
+            <p style="font-size:14.5px;color:#4a5875;margin:0;line-height:1.5;">Whatever they're obsessed with becomes the project. Their pick.</p>
+          </div>
+        </div>
+        <div data-m="cmprow" style="display:flex;flex-wrap:wrap;gap:clamp(10px,2.4vw,28px);align-items:center;padding:clamp(18px,3vw,26px) 0;border-top:1px solid rgba(16,25,46,.1);">
+          <div data-m="cmpold" style="flex:1 1 230px;min-width:0;">
+            <div style="font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#b4483f;margin-bottom:7px;">The old way</div>
+            <div style="font-size:clamp(16px,2.1vw,19px);font-weight:600;letter-spacing:-.01em;color:#5c6880;margin-bottom:4px;">A kid who only knows AI as a cheat</div>
+            <p style="font-size:14.5px;color:#7a869e;margin:0;line-height:1.5;">The habit sets at this age, and it points wherever you let it.</p>
+          </div>
+          <span data-m="cmparrow" style="width:30px;height:30px;border-radius:50%;background:#10192e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M13 6l6 6-6 6"></path></svg>
+          </span>
+          <div data-m="cmpnew" style="flex:1 1 230px;min-width:0;">
+            <div style="font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1f9d6b;margin-bottom:7px;">The new way</div>
+            <div style="font-size:clamp(16px,2.1vw,19px);font-weight:700;letter-spacing:-.015em;color:#10192e;margin-bottom:4px;">A habit that points at building</div>
+            <p style="font-size:14.5px;color:#4a5875;margin:0;line-height:1.5;">The same screen you've been fighting about, pointed the other way.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="padding:clamp(54px,7vw,92px) 0;">
+    <div style="max-width:1120px;margin:0 auto;padding:0 clamp(16px,4.5vw,24px);">
+      <div style="max-width:none;margin:0 auto clamp(48px,6vw,68px);text-align:center;">
+        <h2 style="font-size:clamp(27px,3.6vw,42px);line-height:1.1;letter-spacing:-.025em;font-weight:700;margin:0;text-wrap:balance;">How we build <span style="font-style:italic;background-image:linear-gradient(180deg,rgba(47,95,224,.32),rgba(47,95,224,.32));background-size:100% .09em;background-position:0 1.06em;background-repeat:no-repeat;padding:0 .04em;">high agency</span> with our students.</h2>
+      </div>
+
+      <div style="max-width:1000px;margin:0 auto;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(24px,4vw,40px);">
+
+          <div style="text-align:center;position:relative;">
+            <div style="display:flex;align-items:center;justify-content:center;margin-bottom:26px;">
+              <span style="height:1px;flex:1;background:rgba(47,95,224,.28);display:block;"></span>
+              <span style="width:46px;height:46px;border-radius:50%;border:1px solid rgba(47,95,224,.45);color:#2f5fe0;font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:#fff;">1</span>
+              <span style="height:1px;flex:1;background:rgba(47,95,224,.28);display:block;"></span>
+            </div>
+            <h3 style="font-size:19px;letter-spacing:-.015em;margin:0 0 10px;">They choose the problem</h3>
+            <p style="font-size:15.5px;color:#7a869e;margin:0;line-height:1.6;">We do a deep dive into their current interests and angles together, so the project they pick is one that actually fits them.</p>
+          </div>
+
+          <div style="text-align:center;position:relative;">
+            <div style="display:flex;align-items:center;justify-content:center;margin-bottom:26px;">
+              <span style="height:1px;flex:1;background:rgba(47,95,224,.28);display:block;"></span>
+              <span style="width:46px;height:46px;border-radius:50%;border:1px solid rgba(47,95,224,.45);color:#2f5fe0;font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:#fff;">2</span>
+              <span style="height:1px;flex:1;background:rgba(47,95,224,.28);display:block;"></span>
+            </div>
+            <h3 style="font-size:19px;letter-spacing:-.015em;margin:0 0 10px;">They build in front of people</h3>
+            <p style="font-size:15.5px;color:#7a869e;margin:0;line-height:1.6;">Skills get built in real time, week over week, in front of a mentor and their peers, and that accountability keeps the build moving.</p>
+          </div>
+
+          <div style="text-align:center;position:relative;">
+            <div style="display:flex;align-items:center;justify-content:center;margin-bottom:26px;">
+              <span style="height:1px;flex:1;background:rgba(47,95,224,.28);display:block;"></span>
+              <span style="width:46px;height:46px;border-radius:50%;border:1px solid #2f5fe0;color:#fff;background:#2f5fe0;font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">3</span>
+              <span style="height:1px;flex:1;background:rgba(47,95,224,.28);display:block;"></span>
+            </div>
+            <h3 style="font-size:19px;letter-spacing:-.015em;margin:0 0 10px;">They launch something people can actually use</h3>
+            <p style="font-size:15.5px;color:#7a869e;margin:0;line-height:1.6;">Whether it's an agency or a service, a product, or research, what they build in the end is real and tangible, live where anyone can open it.</p>
+          </div>
+        </div>
+
+        <div style="max-width:62ch;margin:clamp(38px,5vw,54px) auto 0;text-align:center;">
+          <div style="display:flex;flex-direction:column;gap:14px;">
+            <p style="font-size:clamp(17px,2vw,19px);color:#4a5875;line-height:1.7;margin:0;text-wrap:pretty;"><strong>Worst case?</strong><br>They finish something real and reach applications years ahead of the senior-year scramble.</p>
+            <p style="font-size:clamp(17px,2vw,19px);color:#4a5875;line-height:1.7;margin:0;text-wrap:pretty;"><strong>Best case?</strong><br>They grow up fluent in the biggest gold rush in history.</p>
+            <p style="font-size:clamp(17px,2vw,19px);color:#10192e;font-weight:600;line-height:1.7;margin:0;text-wrap:pretty;">Either way they come out ahead, and that is the entire bet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="how" style="padding:clamp(54px,7vw,92px) 0;background:#0c1424;color:#fff;overflow:hidden;">
+    <div style="max-width:1120px;margin:0 auto;padding:0 clamp(16px,4.5vw,24px);">
+      <div style="max-width:none;margin:0 auto clamp(26px,3.4vw,34px);text-align:center;">
+        <h2 style="font-size:clamp(27px,3.6vw,42px);line-height:1.1;letter-spacing:-.025em;font-weight:700;margin:0;color:#fff;text-wrap:balance;">Twelve weeks to build a skillset that hedges their whole life against the AI economy</h2>
+      </div>
+
+      <p style="max-width:62ch;margin:0 auto 18px;text-align:center;font-size:16.5px;color:#a8b4cc;text-wrap:pretty;">Live online, six students per cohort, about five hours a week, guided by mentors like an ex-Google tech lead and a former Ivy admissions officer.</p>
+
+
+      <div style="max-width:960px;margin:0 auto;">
+
+        <div data-ref="setTl" style="position:relative;">
+          <span data-style="tline"></span>
+          <span data-style="tfill"></span>
+
+          <div data-ref="setRow0" data-style="trow0">
+            <span data-style="tnode0"></span>
+            <div data-style="tcard0">
+              <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8fb0ff;margin-bottom:10px;">Week 1</div>
+              <h3 style="font-size:clamp(19px,2.6vw,24px);letter-spacing:-.02em;line-height:1.25;margin:0 0 10px;color:#fff;text-wrap:pretty;">We find out how your teen actually learns.</h3>
+              <p style="font-size:16px;color:#a8b4cc;margin:0 0 18px;line-height:1.6;text-wrap:pretty;">A deep dive into their habits, then small AI tasks with no rules about how they get them done, because what they reach for tells us everything.</p>
+              <div style="display:flex;align-items:center;gap:10px;background:rgba(47,95,224,.13);border:1px solid rgba(143,176,255,.28);border-radius:10px;padding:12px 14px;justify-content:center;">
+                <span style="width:8px;height:8px;border-radius:2px;background:#8fb0ff;display:block;flex-shrink:0;"></span>
+                <span style="font-size:14px;color:#fff;font-weight:600;line-height:1.4;">A real read on how they work</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-ref="setRow1" data-style="trow1">
+            <span data-style="tnode1"></span>
+            <div data-style="tcard1">
+              <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8fb0ff;margin-bottom:10px;">Week 2</div>
+              <h3 style="font-size:clamp(19px,2.6vw,24px);letter-spacing:-.02em;line-height:1.25;margin:0 0 10px;color:#fff;text-wrap:pretty;">They build their first agent.</h3>
+              <p style="font-size:16px;color:#a8b4cc;margin:0 0 18px;line-height:1.6;text-wrap:pretty;">A study buddy for their hardest class, a game bot, or a research assistant. They pick which, they build it, and they keep it.</p>
+              <div style="display:flex;align-items:center;gap:10px;background:rgba(47,95,224,.13);border:1px solid rgba(143,176,255,.28);border-radius:10px;padding:12px 14px;justify-content:center;">
+                <span style="width:8px;height:8px;border-radius:2px;background:#8fb0ff;display:block;flex-shrink:0;"></span>
+                <span style="font-size:14px;color:#fff;font-weight:600;line-height:1.4;">Their own working agent</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-ref="setRow2" data-style="trow2">
+            <span data-style="tnode2"></span>
+            <div data-style="tcard2">
+              <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8fb0ff;margin-bottom:10px;">Week 3</div>
+              <h3 style="font-size:clamp(19px,2.6vw,24px);letter-spacing:-.02em;line-height:1.25;margin:0 0 10px;color:#fff;text-wrap:pretty;">They scope the venture they actually want.</h3>
+              <p style="font-size:16px;color:#a8b4cc;margin:0 0 18px;line-height:1.6;text-wrap:pretty;">One working session to land on something they will finish, small enough to launch and real enough to matter to them.</p>
+              <div style="display:flex;align-items:center;gap:10px;background:rgba(47,95,224,.13);border:1px solid rgba(143,176,255,.28);border-radius:10px;padding:12px 14px;justify-content:center;">
+                <span style="width:8px;height:8px;border-radius:2px;background:#8fb0ff;display:block;flex-shrink:0;"></span>
+                <span style="font-size:14px;color:#fff;font-weight:600;line-height:1.4;">Venture scoped and named</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-ref="setRow3" data-style="trow3">
+            <span data-style="tnode3"></span>
+            <div data-style="tcard3">
+              <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8fb0ff;margin-bottom:10px;">Weeks 4-10</div>
+              <h3 style="font-size:clamp(19px,2.6vw,24px);letter-spacing:-.02em;line-height:1.25;margin:0 0 10px;color:#fff;text-wrap:pretty;">Seven weeks of building in front of people.</h3>
+              <p style="font-size:16px;color:#a8b4cc;margin:0 0 18px;line-height:1.6;text-wrap:pretty;">A mentor pushes them toward first real users, their friends and classmates, and a cohort of six notices when they go quiet.</p>
+              <div style="display:flex;align-items:center;gap:10px;background:rgba(47,95,224,.13);border:1px solid rgba(143,176,255,.28);border-radius:10px;padding:12px 14px;justify-content:center;">
+                <span style="width:8px;height:8px;border-radius:2px;background:#8fb0ff;display:block;flex-shrink:0;"></span>
+                <span style="font-size:14px;color:#fff;font-weight:600;line-height:1.4;">First real users in the product</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-ref="setRow4" data-style="trow4">
+            <span data-style="tnode4"></span>
+            <div data-style="tcard4">
+              <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8fb0ff;margin-bottom:10px;">Weeks 11-12</div>
+              <h3 style="font-size:clamp(19px,2.6vw,24px);letter-spacing:-.02em;line-height:1.25;margin:0 0 10px;color:#fff;text-wrap:pretty;">They launch it, present it, and own it after.</h3>
+              <p style="font-size:16px;color:#a8b4cc;margin:0 0 18px;line-height:1.6;text-wrap:pretty;">A live showcase, a real URL, and a story they can tell in any room, from the dinner table to an admissions interview years from now.</p>
+              <div style="display:flex;align-items:center;gap:10px;background:rgba(47,95,224,.13);border:1px solid rgba(143,176,255,.28);border-radius:10px;padding:12px 14px;justify-content:center;">
+                <span style="width:8px;height:8px;border-radius:2px;background:#8fb0ff;display:block;flex-shrink:0;"></span>
+                <span style="font-size:14px;color:#fff;font-weight:600;line-height:1.4;">Shipped. Live URL, theirs to keep</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="max-width:660px;margin:clamp(30px,4.5vw,44px) auto 0;background:linear-gradient(160deg,rgba(31,157,107,.16),rgba(47,95,224,.12));border:1.5px solid rgba(31,157,107,.45);border-radius:18px;padding:clamp(26px,3.6vw,34px);box-shadow:0 16px 44px rgba(31,157,107,.14);">
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:18px;">
+            <span style="width:30px;height:30px;border-radius:50%;background:#1f9d6b;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 0 6px rgba(31,157,107,.16);">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+            </span>
+            <span style="font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#6fdcae;">Week 12, done</span>
+          </div>
+          <h3 style="font-size:clamp(20px,2.8vw,25px);letter-spacing:-.02em;line-height:1.25;margin:0 0 22px;color:#fff;text-wrap:pretty;">What your teen walks away holding.</h3>
+          <div style="display:flex;flex-direction:column;gap:18px;">
+            <div style="display:flex;gap:13px;align-items:flex-start;">
+              <span style="width:22px;height:22px;border-radius:50%;background:#1f9d6b;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+              </span>
+              <div>
+                <div style="font-size:16.5px;font-weight:700;color:#fff;letter-spacing:-.01em;margin-bottom:3px;">Working fluency in the tools employers pay for</div>
+                <p style="margin:0;font-size:15px;color:#b9c7dd;line-height:1.55;text-wrap:pretty;">The habit of pointing AI at a real problem until something usable comes out the other side. That habit is what employers pay for.</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:13px;align-items:flex-start;">
+              <span style="width:22px;height:22px;border-radius:50%;background:#1f9d6b;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+              </span>
+              <div>
+                <div style="font-size:16.5px;font-weight:700;color:#fff;letter-spacing:-.01em;margin-bottom:3px;">A live venture at a real URL</div>
+                <p style="margin:0;font-size:15px;color:#b9c7dd;line-height:1.55;text-wrap:pretty;">Their name on it, open for anyone to use and judge, because shipping it is the graduation requirement.</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:13px;align-items:flex-start;">
+              <span style="width:22px;height:22px;border-radius:50%;background:#1f9d6b;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+              </span>
+              <div>
+                <div style="font-size:16.5px;font-weight:700;color:#fff;letter-spacing:-.01em;margin-bottom:3px;">Skills that compound from here</div>
+                <p style="margin:0;font-size:15px;color:#b9c7dd;line-height:1.55;text-wrap:pretty;">Every build makes the next one bigger. A kid who starts now arrives everywhere, school included, years ahead.</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:13px;align-items:flex-start;">
+              <span style="width:22px;height:22px;border-radius:50%;background:#1f9d6b;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+              </span>
+              <div>
+                <div style="font-size:16.5px;font-weight:700;color:#fff;letter-spacing:-.01em;margin-bottom:3px;">The head start no senior-year scramble can fake</div>
+                <p style="margin:0;font-size:15px;color:#b9c7dd;line-height:1.55;text-wrap:pretty;">Years of shipped work before applications even matter, built while nothing was riding on it, and they can explain every decisions were theirs.</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:13px;align-items:flex-start;">
+              <span style="width:22px;height:22px;border-radius:50%;background:#1f9d6b;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+              </span>
+              <div>
+                <div style="font-size:16.5px;font-weight:700;color:#fff;letter-spacing:-.01em;margin-bottom:3px;">A launch showcase and completion credential</div>
+                <p style="margin:0;font-size:15px;color:#b9c7dd;line-height:1.55;text-wrap:pretty;">They present the finished venture to the room, then keep both the work and the record of it.</p>
+              </div>
+            </div>
+          </div>
+          <p style="margin:22px 0 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:15px;color:#b9c7dd;line-height:1.6;text-wrap:pretty;">College stays on the table the whole time. They just arrive at it holding years of real work instead of a story invented senior year.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:clamp(30px,4vw,42px);">
+        <a href="#enroll" style="display:inline-block;background:#fff;color:#10192e;font-weight:700;font-size:16px;padding:16px 32px;border-radius:11px;">Book your discovery call</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="bet" style="padding:clamp(54px,7vw,92px) 0;">
+    <div style="max-width:1120px;margin:0 auto;padding:0 clamp(16px,4.5vw,24px);">
+
+      <div style="max-width:780px;margin:0 auto;">
+        <h2 style="font-size:clamp(27px,3.6vw,42px);line-height:1.1;letter-spacing:-.025em;font-weight:700;margin:0 auto clamp(24px,3.4vw,32px);text-align:center;text-wrap:balance;">The founders have generated over $50M online and with AI.</h2>
+
+        <p style="margin:0 auto clamp(24px,3.4vw,32px);max-width:60ch;text-align:center;font-size:18px;font-style:italic;line-height:1.55;color:#10192e;">"I caught him using ChatGPT on his essay. Do I ban it, or is that a mistake too?"</p>
+
+        <p style="font-size:17px;color:#4a5875;line-height:1.7;margin:0 auto clamp(30px,4.4vw,44px);max-width:64ch;text-align:center;text-wrap:pretty;">Banning it felt wrong and letting it slide felt worse. 13 to 15 is exactly when the habit sets, so we built the program that catches the habit and points it at building. We teach kids what we had to learn as adults, ten years earlier.</p>
+
+        <div style="display:flex;flex-wrap:wrap;gap:clamp(20px,3.4vw,36px);padding-top:clamp(24px,3.4vw,32px);border-top:1px solid rgba(16,25,46,.1);">
+          <div style="flex:1 1 300px;min-width:0;display:flex;gap:16px;align-items:center;">
+            <img onerror="this.style.display='none'" src="../assets/founder-david.jpg" alt="David Malka, co-founder" style="width:76px;height:76px;border-radius:50%;object-fit:cover;display:block;flex-shrink:0;">
+            <div style="min-width:0;">
+              <div style="font-weight:700;font-size:17px;">David Malka</div>
+              <div style="font-size:12.5px;color:#2f5fe0;font-weight:600;margin:1px 0 5px;">Co-founder</div>
+              <p style="margin:0;font-size:14.5px;color:#7a869e;line-height:1.5;">David has spent his career finding asymmetric opportunities before they become obvious: from professional poker edges to a $500M international real estate fund across 11 countries.</p>
+            </div>
+          </div>
+          <div style="flex:1 1 300px;min-width:0;display:flex;gap:16px;align-items:center;">
+            <img onerror="this.style.display='none'" src="../assets/founder-ryan.jpg" alt="Ryan, co-founder" style="width:76px;height:76px;border-radius:50%;object-fit:cover;display:block;flex-shrink:0;">
+            <div style="min-width:0;">
+              <div style="font-weight:700;font-size:17px;">Ryan</div>
+              <div style="font-size:12.5px;color:#2f5fe0;font-weight:600;margin:1px 0 5px;">Co-founder</div>
+              <p style="margin:0;font-size:14.5px;color:#7a869e;line-height:1.5;">Builds the AI systems McLaren's F1 engineers use mid-race.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:clamp(54px,7vw,92px) 0;">
+    <div style="max-width:1120px;margin:0 auto;padding:0 clamp(16px,4.5vw,24px);">
+      <div style="max-width:none;margin:0 auto 32px;text-align:center;">
+        <h2 style="font-size:clamp(27px,3.6vw,42px);line-height:1.1;letter-spacing:-.025em;font-weight:700;margin:0;text-wrap:balance;">Meet the mentors.</h2>
+      </div>
+
+
+      <sc-if data-if="showFaces">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;max-width:1000px;margin:36px auto 0;">
+          <div style="border:1px solid rgba(16,25,46,.09);border-radius:16px;background:#fff;padding:24px;display:flex;gap:18px;align-items:flex-start;">
+            <img onerror="this.style.display='none'" src="../assets/inst-maya.jpg" alt="Maya Chen" style="width:88px;height:88px;border-radius:12px;object-fit:cover;flex-shrink:0;display:block;">
+            <div>
+              <div style="font-weight:700;font-size:17px;letter-spacing:-.01em;">Maya Chen</div>
+              <div style="font-size:13px;color:#2f5fe0;font-weight:600;margin:3px 0 8px;">AI Engineer</div>
+              <p style="font-size:14.5px;color:#7a869e;margin:0;line-height:1.55;">Shipped agent tools at a Series B startup. Teaches teens to make a model actually do the work instead of just talking about it.</p>
+            </div>
+          </div>
+          <div style="border:1px solid rgba(16,25,46,.09);border-radius:16px;background:#fff;padding:24px;display:flex;gap:18px;align-items:flex-start;">
+            <img onerror="this.style.display='none'" src="../assets/inst-daniel.jpg" alt="Daniel Ortiz" style="width:88px;height:88px;border-radius:12px;object-fit:cover;flex-shrink:0;display:block;">
+            <div>
+              <div style="font-weight:700;font-size:17px;letter-spacing:-.01em;">Daniel Ortiz</div>
+              <div style="font-size:13px;color:#2f5fe0;font-weight:600;margin:3px 0 8px;">Former Ivy Admissions</div>
+              <p style="font-size:14.5px;color:#7a869e;margin:0;line-height:1.55;">Read thousands of applications at a top-ten school. Knows the difference between a project that reads as real and one that reads as bought.</p>
+            </div>
+          </div>
+          <div style="border:1px solid rgba(16,25,46,.09);border-radius:16px;background:#fff;padding:24px;display:flex;gap:18px;align-items:flex-start;">
+            <img onerror="this.style.display='none'" src="../assets/inst-priya.jpg" alt="Priya Nair" style="width:88px;height:88px;border-radius:12px;object-fit:cover;flex-shrink:0;display:block;">
+            <div>
+              <div style="font-weight:700;font-size:17px;letter-spacing:-.01em;">Priya Nair</div>
+              <div style="font-size:13px;color:#2f5fe0;font-weight:600;margin:3px 0 8px;">Product Founder</div>
+              <p style="font-size:14.5px;color:#7a869e;margin:0;line-height:1.55;">Built and sold a product used by 40,000 people. Coaches the messy jump from an idea to something strangers will actually open.</p>
+            </div>
+          </div>
+          <div style="border:1px solid rgba(16,25,46,.09);border-radius:16px;background:#fff;padding:24px;display:flex;gap:18px;align-items:flex-start;">
+            <img onerror="this.style.display='none'" src="../assets/inst-marcus.jpg" alt="Marcus Bell" style="width:88px;height:88px;border-radius:12px;object-fit:cover;flex-shrink:0;display:block;">
+            <div>
+              <div style="font-weight:700;font-size:17px;letter-spacing:-.01em;">Marcus Bell</div>
+              <div style="font-size:13px;color:#2f5fe0;font-weight:600;margin:3px 0 8px;">Ex-Google Tech Lead</div>
+              <p style="font-size:14.5px;color:#7a869e;margin:0;line-height:1.55;">Former FAANG engineer. Turns a rough prototype into something a student can deploy, demo, and keep running after week 12.</p>
+            </div>
+          </div>
+          <div style="border:1px solid rgba(16,25,46,.09);border-radius:16px;background:#fff;padding:24px;display:flex;gap:18px;align-items:flex-start;">
+            <div style="width:88px;height:88px;border-radius:12px;overflow:hidden;flex-shrink:0;background:#f4f7fc;">
+              <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#e8eefb,#dce6f9);color:#2f5fe0;font-weight:700;font-size:22px;">SR</div>
+            </div>
+            <div>
+              <div style="font-weight:700;font-size:17px;letter-spacing:-.01em;">Sofia Reyes</div>
+              <div style="font-size:13px;color:#2f5fe0;font-weight:600;margin:3px 0 8px;">MIT Instructor</div>
+              <p style="font-size:14.5px;color:#7a869e;margin:0;line-height:1.55;">Teaches applied machine learning to undergraduates. Good at making a hard idea land for a fourteen-year-old without watering it down.</p>
+            </div>
+          </div>
+          <div style="border:1px solid rgba(16,25,46,.09);border-radius:16px;background:#fff;padding:24px;display:flex;gap:18px;align-items:flex-start;">
+            <div style="width:88px;height:88px;border-radius:12px;overflow:hidden;flex-shrink:0;background:#f4f7fc;">
+              <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#e8eefb,#dce6f9);color:#2f5fe0;font-weight:700;font-size:22px;">AV</div>
+            </div>
+            <div>
+              <div style="font-weight:700;font-size:17px;letter-spacing:-.01em;">Adam Voss</div>
+              <div style="font-size:13px;color:#2f5fe0;font-weight:600;margin:3px 0 8px;">Founder, YC Alum</div>
+              <p style="font-size:14.5px;color:#7a869e;margin:0;line-height:1.55;">Took a company through Y Combinator and out the other side. Runs the sessions where students get their first real users.</p>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+
+  <section id="proof" style="padding:clamp(54px,7vw,92px) 0;background:#10192e;color:#fff;">
+    <div style="max-width:1120px;margin:0 auto;padding:0 clamp(16px,4.5vw,24px);">
+      <div style="max-width:none;margin:0 auto 46px;text-align:center;">
+        <h2 style="font-size:clamp(27px,3.6vw,42px);line-height:1.1;letter-spacing:-.025em;font-weight:700;margin:0;color:#fff;text-wrap:balance;">Three teenagers, three finished ventures.</h2>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">
+        <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.11);border-radius:16px;padding:28px 26px;display:flex;flex-direction:column;">
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:18px;">
+            <span style="width:34px;height:34px;border-radius:50%;background:rgba(143,176,255,.18);color:#8fb0ff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">E</span>
+            <span style="font-size:14px;font-weight:600;color:#fff;">Elena, 14</span>
+          </div>
+          <p style="font-size:16.5px;color:#fff;margin:0 0 20px;line-height:1.55;">An AI study assistant for a chemistry unit her whole grade was failing.</p>
+          <div style="margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);display:flex;align-items:baseline;gap:8px;">
+            <span style="font-size:26px;font-weight:800;letter-spacing:-.03em;color:#fff;line-height:1;">300+</span>
+            <span style="font-size:13px;color:#8fb0ff;">classmates used it in one semester</span>
+          </div>
+        </div>
+        <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.11);border-radius:16px;padding:28px 26px;display:flex;flex-direction:column;">
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:18px;">
+            <span style="width:34px;height:34px;border-radius:50%;background:rgba(143,176,255,.18);color:#8fb0ff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">J</span>
+            <span style="font-size:14px;font-weight:600;color:#fff;">Jonah, 15</span>
+          </div>
+          <p style="font-size:16.5px;color:#fff;margin:0 0 20px;line-height:1.55;">A booking system for his mother's salon that answers customers and chases no-shows.</p>
+          <div style="margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);display:flex;align-items:baseline;gap:8px;">
+            <span style="font-size:26px;font-weight:800;letter-spacing:-.03em;color:#fff;line-height:1;">12 hrs</span>
+            <span style="font-size:13px;color:#8fb0ff;">of her week given back, every week</span>
+          </div>
+        </div>
+        <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.11);border-radius:16px;padding:28px 26px;display:flex;flex-direction:column;">
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:18px;">
+            <span style="width:34px;height:34px;border-radius:50%;background:rgba(143,176,255,.18);color:#8fb0ff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">A</span>
+            <span style="font-size:14px;font-weight:600;color:#fff;">Amara, 16</span>
+          </div>
+          <p style="font-size:16.5px;color:#fff;margin:0 0 20px;line-height:1.55;">A shift-matching app for the food bank she volunteers at.</p>
+          <div style="margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);display:flex;align-items:baseline;gap:8px;">
+            <span style="font-size:26px;font-weight:800;letter-spacing:-.03em;color:#fff;line-height:1;">Live</span>
+            <span style="font-size:13px;color:#8fb0ff;">and still running for them today</span>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:12.5px;color:#7c89a3;text-align:center;margin:26px 0 0;">Illustrative examples. Names changed, and individual outcomes depend on the student and the work they put in.</p>
+    </div>
+  <p style="text-align:center;font-size:12.5px;color:#6d7c98;margin:18px 0 0;">Illustrative example ventures. Individual outcomes depend on the student and the work they put in.</p>
+  </section>
+
+  <section id="quiz" style="padding:clamp(54px,7vw,92px) 0;background:#f4f7fc;border-bottom:1px solid rgba(16,25,46,.07);">
+    <div style="max-width:900px;margin:0 auto;padding:0 clamp(16px,4.5vw,24px);">
+
+      <sc-if data-if="atTeaser">
+        <div style="max-width:640px;margin:0 auto;text-align:center;">
+          <h2 style="font-size:clamp(27px,3.6vw,42px);line-height:1.1;letter-spacing:-.025em;font-weight:700;margin:0 0 14px;text-wrap:balance;">So what would your teen build?</h2>
+          <p style="font-size:18px;color:#4a5875;margin:0 0 28px;text-wrap:pretty;">Every teenager has a build archetype, and most programs fight the one yours has. Two minutes tells you theirs.</p>
+          <div data-click="openIntro" style="display:inline-block;cursor:pointer;background:linear-gradient(120deg,#2f5fe0,#7a5cf0);color:#fff;font-weight:600;font-size:16.5px;padding:17px 36px;border-radius:11px;box-shadow:0 10px 30px rgba(47,95,224,.24);">Find their archetype &rarr;</div>
+          <p style="font-size:13.5px;color:#9aa4b8;margin:14px 0 0;">Nine questions, two minutes. Free, no card, no call required.</p>
+        </div>
+      </sc-if>
+
+      <sc-if data-if="atIntro">
+        <div>
+          <div style="max-width:58ch;margin:0 auto 40px;text-align:center;">
+            <h2 style="font-size:clamp(27px,3.6vw,42px);line-height:1.1;letter-spacing:-.025em;font-weight:700;margin:0 0 14px;text-wrap:balance;">So what would your teen build?</h2>
+            <p style="font-size:18px;color:#4a5875;margin:0 0 18px;text-wrap:pretty;">Elena, Jonah and Amara each built something only they would have built. That is not luck. It comes from starting with how the teenager is already wired instead of handing them a curriculum.</p>
+            <p style="font-size:18px;color:#4a5875;margin:0;text-wrap:pretty;">There are five build archetypes, and most programs fight the one your teen has. Two minutes of questions tells you theirs, what that type ships in twelve weeks, and where they typically stall.</p>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:30px;">
+            <div style="padding:10px 8px;text-align:center;">
+              <span style="width:34px;height:34px;border-radius:9px;background:rgba(47,95,224,.12);display:block;margin:0 auto 12px;"></span>
+              <div style="font-weight:700;font-size:15.5px;">The Operator</div>
+              <p style="font-size:13px;color:#7a869e;margin:4px 0 0;line-height:1.4;">Runs things. Fixes systems.</p>
+            </div>
+            <div style="padding:10px 8px;text-align:center;">
+              <span style="width:34px;height:34px;border-radius:50%;background:rgba(122,92,240,.14);display:block;margin:0 auto 12px;"></span>
+              <div style="font-weight:700;font-size:15.5px;">The Inventor</div>
+              <p style="font-size:13px;color:#7a869e;margin:4px 0 0;line-height:1.4;">Starts everything. Ideas first.</p>
+            </div>
+            <div style="padding:10px 8px;text-align:center;">
+              <span style="width:34px;height:34px;border-radius:9px;background:rgba(31,157,107,.14);transform:rotate(45deg);display:block;margin:0 auto 12px;"></span>
+              <div style="font-weight:700;font-size:15.5px;">The Advocate</div>
+              <p style="font-size:13px;color:#7a869e;margin:4px 0 0;line-height:1.4;">Cares loudly. People first.</p>
+            </div>
+            <div style="padding:10px 8px;text-align:center;">
+              <span style="width:34px;height:34px;border-radius:4px;background:rgba(16,25,46,.1);display:block;margin:0 auto 12px;"></span>
+              <div style="font-weight:700;font-size:15.5px;">The Analyst</div>
+              <p style="font-size:13px;color:#7a869e;margin:4px 0 0;line-height:1.4;">Deep-diver. Argues with data.</p>
+            </div>
+            <div style="padding:10px 8px;text-align:center;">
+              <span style="width:34px;height:34px;border-radius:50%;background:rgba(180,72,63,.12);display:block;margin:0 auto 12px;"></span>
+              <div style="font-weight:700;font-size:15.5px;">The Skeptic</div>
+              <p style="font-size:13px;color:#7a869e;margin:4px 0 0;line-height:1.4;">High horsepower, no target yet.</p>
+            </div>
+          </div>
+
+          <div style="text-align:center;">
+            <div data-click="start" style="display:inline-block;cursor:pointer;background:linear-gradient(120deg,#2f5fe0,#7a5cf0);color:#fff;font-weight:600;font-size:16.5px;padding:17px 36px;border-radius:11px;box-shadow:0 10px 30px rgba(47,95,224,.24);">Find their build archetype &rarr;</div>
+            <p style="font-size:13.5px;color:#7a869e;margin:14px 0 0;">Nine questions, two minutes. Every parent gets a real answer, and not every teen is a fit.</p>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if data-if="inQuiz">
+        <div style="background:#fff;border:1px solid rgba(16,25,46,.1);border-radius:20px;padding:clamp(22px,3.4vw,40px);box-shadow:0 14px 44px rgba(16,25,46,.07);">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:12px;">
+            <span style="font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#7a869e;">Question <span data-text="qNum"></span> of 9</span>
+            <span style="font-size:11.5px;color:#2f5fe0;"><span data-text="qPct"></span></span>
+          </div>
+          <div style="height:5px;border-radius:100px;background:#eef1f6;overflow:hidden;margin-bottom:28px;">
+            <div data-style="quizRail"></div>
+          </div>
+
+          <sc-if data-if="q0">
+            <div style="animation:fadeIn .3s ease both;">
+              <h3 style="font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;line-height:1.25;margin:0 0 8px;">When your teen gets obsessed with something, what does it look like?</h3>
+              <p style="font-size:15px;color:#7a869e;margin:0 0 22px;">Pick the closest one. There is no wrong answer here.</p>
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <div data-click="pick.q1.a" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:16px 18px;display:flex;gap:14px;align-items:center;font-size:16px;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:22px;height:22px;border-radius:6px;background:rgba(47,95,224,.14);flex-shrink:0;display:block;"></span>
+                  They reorganize it. Spreadsheets, schedules, systems nobody asked for.
+                </div>
+                <div data-click="pick.q1.b" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:16px 18px;display:flex;gap:14px;align-items:center;font-size:16px;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:22px;height:22px;border-radius:50%;background:rgba(122,92,240,.16);flex-shrink:0;display:block;"></span>
+                  They start building a version of it within a week.
+                </div>
+                <div data-click="pick.q1.c" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:16px 18px;display:flex;gap:14px;align-items:center;font-size:16px;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:22px;height:22px;border-radius:6px;background:rgba(31,157,107,.16);transform:rotate(45deg);flex-shrink:0;display:block;"></span>
+                  It becomes a cause. They want other people involved.
+                </div>
+                <div data-click="pick.q1.d" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:16px 18px;display:flex;gap:14px;align-items:center;font-size:16px;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:22px;height:22px;border-radius:4px;background:rgba(16,25,46,.12);flex-shrink:0;display:block;"></span>
+                  They go three levels deep and correct adults about it.
+                </div>
+                <div data-click="pick.q1.e" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:16px 18px;display:flex;gap:14px;align-items:center;font-size:16px;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:22px;height:22px;border-radius:50%;background:rgba(180,72,63,.14);flex-shrink:0;display:block;"></span>
+                  Honestly? Nothing has grabbed them like that yet.
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if data-if="q1">
+            <div style="animation:fadeIn .3s ease both;">
+              <h3 style="font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;line-height:1.25;margin:0 0 8px;">How do they currently use ChatGPT?</h3>
+              <p style="font-size:15px;color:#7a869e;margin:0 0 22px;">Be honest. Every answer on this list is workable, and each one changes what we teach first.</p>
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <div data-click="pick.q2.a" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h13"></path><path d="M13 7l5 5-5 5"></path></svg></span>
+                  Homework shortcuts, mostly. It writes, they submit.
+                </div>
+                <div data-click="pick.q2.b" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v6M12 14v6M4 12h6M14 12h6"></path></svg></span>
+                  Curious tinkering. Images, jokes, random experiments.
+                </div>
+                <div data-click="pick.q2.c" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="4" width="8" height="6" rx="1"></rect><path d="M4 20l8-8"></path></svg></span>
+                  They have already built something small with it.
+                </div>
+                <div data-click="pick.q2.d" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M7 17L17 7"></path></svg></span>
+                  Barely touch it. They think it is cheating or pointless.
+                </div>
+                <div data-click="pick.q2.e" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg></span>
+                  We do not allow it at home right now.
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if data-if="q2">
+            <div style="animation:fadeIn .3s ease both;">
+              <h3 style="font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;line-height:1.25;margin:0 0 8px;">A group project goes sideways. What do they do?</h3>
+              <p style="font-size:15px;color:#7a869e;margin:0 0 22px;">This is the question that separates two archetypes that otherwise look identical.</p>
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <div data-click="pick.q3.a" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="16" rx="2"></rect><path d="M9 9h6M9 13h6M9 17h3"></path></svg></span>
+                  Takes over the plan and assigns everyone a job.
+                </div>
+                <div data-click="pick.q3.b" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13-6"></path><path d="M20 12a8 8 0 0 1-13 6"></path><path d="M17 3v3h-3"></path><path d="M7 21v-3h3"></path></svg></span>
+                  Rebuilds the whole thing their own way the night before.
+                </div>
+                <div data-click="pick.q3.c" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="3"></circle><path d="M3 19c0-3 3-5 6-5s6 2 6 5"></path><path d="M16 8a3 3 0 0 1 0 6"></path></svg></span>
+                  Holds the group together and covers for the weakest link.
+                </div>
+                <div data-click="pick.q3.d" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19V9M12 19V5M19 19v-7"></path></svg></span>
+                  Points out exactly why the plan was wrong, with receipts.
+                </div>
+                <div data-click="pick.q3.e" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v7"></path><path d="M7 7a7 7 0 1 0 10 0"></path></svg></span>
+                  Checks out. Does the minimum and moves on.
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if data-if="q3">
+            <div style="animation:fadeIn .3s ease both;">
+              <h3 style="font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;line-height:1.25;margin:0 0 8px;">Where does college sit in your family's plan?</h3>
+              <p style="font-size:15px;color:#7a869e;margin:0 0 22px;">We are complementary to college prep, so this only changes how we sequence the twelve weeks.</p>
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <div data-click="pick.q4.a" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"></path><path d="M7 11v4c0 1.4 2.2 2.6 5 2.6s5-1.2 5-2.6v-4"></path></svg></span>
+                  Committed. They are applying, and we want the strongest profile possible.
+                </div>
+                <div data-click="pick.q4.b" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M9.6 9.6a2.5 2.5 0 1 1 2.9 2.5V14"></path><path d="M12.5 17.2h.01"></path></svg></span>
+                  Questioning it. We are not sure the math still works.
+                </div>
+                <div data-click="pick.q4.c" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6"></path><path d="M12 14L6 8V4"></path><path d="M12 14l6-6V4"></path></svg></span>
+                  Undecided. We want them to have a real option either way.
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if data-if="q4">
+            <div style="animation:fadeIn .3s ease both;">
+              <h3 style="font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;line-height:1.25;margin:0 0 8px;">What are they into right now?</h3>
+              <p style="font-size:15px;color:#7a869e;margin:0 0 22px;">One line is enough. Sports, music, cars, gaming, a specific obsession. This is what their first venture gets built around.</p>
+              <input data-value="interestVal" data-change="onInterest" placeholder="e.g. Formula 1, thrifting and reselling, film photography" style="width:100%;border:1px solid rgba(16,25,46,.16);border-radius:12px;padding:16px 18px;font-size:16px;color:#10192e;outline:none;margin-bottom:18px;">
+              <div data-click="next" style="display:inline-block;cursor:pointer;background:#10192e;color:#fff;font-weight:600;font-size:15.5px;padding:14px 28px;border-radius:11px;">Continue &rarr;</div>
+            </div>
+          </sc-if>
+
+          <sc-if data-if="q5">
+            <div style="animation:fadeIn .3s ease both;">
+              <h3 style="font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;line-height:1.25;margin:0 0 8px;">How old are they?</h3>
+              <p style="font-size:15px;color:#7a869e;margin:0 0 22px;">Older kids get a build scoped to land before high school pressure peaks.</p>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;">
+                <div data-click="pick.q6.a" style="cursor:pointer;text-align:center;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:22px 14px;font-size:20px;font-weight:700;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">13</div>
+                <div data-click="pick.q6.b" style="cursor:pointer;text-align:center;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:22px 14px;font-size:20px;font-weight:700;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">14</div>
+                <div data-click="pick.q6.c" style="cursor:pointer;text-align:center;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:22px 14px;font-size:20px;font-weight:700;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">15</div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if data-if="q6">
+            <div style="animation:fadeIn .3s ease both;">
+              <h3 style="font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;line-height:1.25;margin:0 0 8px;">What have you already tried?</h3>
+              <p style="font-size:15px;color:#7a869e;margin:0 0 22px;">Closest one. It tells us what already did not work for your teen.</p>
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <div data-click="pick.q7.a" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="2"></rect><path d="M9 7V5h6v2"></path></svg></span>
+                  Coding classes or a camp.
+                </div>
+                <div data-click="pick.q7.b" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h9a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"></path><path d="M17 7h2v13"></path></svg></span>
+                  Tutoring or test prep.
+                </div>
+                <div data-click="pick.q7.c" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 3v2M12 19v2M3 12h2M19 12h2M6 6l1.4 1.4M16.6 16.6L18 18M18 6l-1.4 1.4M7.4 16.6L6 18"></path></svg></span>
+                  Summer programs or camps.
+                </div>
+                <div data-click="pick.q7.d" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3"><circle cx="12" cy="12" r="8"></circle></svg></span>
+                  Nothing yet. We are just starting to look.
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if data-if="q7">
+            <div style="animation:fadeIn .3s ease both;">
+              <h3 style="font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;line-height:1.25;margin:0 0 8px;">Will your teen show up on camera twice a week, on time?</h3>
+              <p style="font-size:15px;color:#7a869e;margin:0 0 22px;">Cohorts are six students. One person hiding changes the room for everyone.</p>
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <div data-click="pick.q8.a" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(31,157,107,.11);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1f9d6b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="12" height="12" rx="2"></rect><path d="M15 10l6-3v10l-6-3z"></path></svg></span>
+                  Yes. They show up for things they choose.
+                </div>
+                <div data-click="pick.q8.b" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg></span>
+                  Probably, with a nudge from us at the start.
+                </div>
+                <div data-click="pick.q8.c" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(180,72,63,.1);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#b4483f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="12" height="12" rx="2"></rect><path d="M3 3l18 18"></path></svg></span>
+                  Honestly, no. Getting them to anything is a fight.
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if data-if="q8">
+            <div style="animation:fadeIn .3s ease both;">
+              <h3 style="font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;line-height:1.25;margin:0 0 8px;">Are you looking for us to guarantee an admission letter?</h3>
+              <p style="font-size:15px;color:#7a869e;margin:0 0 22px;">We guarantee a shipped venture. Nobody can guarantee the other thing, and anyone who does is selling you something.</p>
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <div data-click="pick.q9.a" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(31,157,107,.11);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1f9d6b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg></span>
+                  No. I want them to have something real either way.
+                </div>
+                <div data-click="pick.q9.b" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(47,95,224,.09);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2f5fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M8 12h8"></path></svg></span>
+                  It would be nice, but I know it does not work that way.
+                </div>
+                <div data-click="pick.q9.c" style="cursor:pointer;border:1px solid rgba(16,25,46,.12);border-radius:12px;padding:15px 18px;font-size:16px;display:flex;gap:14px;align-items:center;" style-hover="border-color:#2f5fe0;background:rgba(47,95,224,.04);">
+                  <span style="width:30px;height:30px;border-radius:9px;background:rgba(180,72,63,.1);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#b4483f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M9 9l6 6M15 9l-6 6"></path></svg></span>
+                  Yes. That is the whole point of the spend for us.
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <div style="margin-top:26px;padding-top:18px;border-top:1px solid rgba(16,25,46,.08);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;">
+            <span data-click="back" style="font-size:14px;color:#7a869e;cursor:pointer;">&larr; Back</span>
+            <span style="font-size:13px;color:#9aa4b8;">Your answers go straight to the mentor who runs your call.</span>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if data-if="atContact">
+        <div style="background:#fff;border:1px solid rgba(16,25,46,.1);border-radius:20px;padding:clamp(22px,3.4vw,40px);box-shadow:0 14px 44px rgba(16,25,46,.07);animation:fadeIn .3s ease both;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:12px;">
+            <span style="font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#7a869e;">Last step</span>
+            <span style="font-size:11.5px;color:#1f9d6b;">100%</span>
+          </div>
+          <div style="height:5px;border-radius:100px;background:#eef1f6;overflow:hidden;margin-bottom:28px;">
+            <div style="height:100%;width:100%;background:linear-gradient(90deg,#2f5fe0,#7a5cf0);border-radius:100px;display:block;"></div>
+          </div>
+
+          <h3 style="font-size:clamp(20px,2.6vw,26px);letter-spacing:-.02em;line-height:1.25;margin:0 0 8px;">Where should the read go?</h3>
+          <p style="font-size:15px;color:#7a869e;margin:0 0 24px;">Your teen's archetype is ready. We send the two-page report to your inbox and hold a seat window for you while you read it.</p>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:14px;">
+            <label style="display:block;">
+              <span style="display:block;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#7a869e;margin-bottom:7px;">Your name</span>
+              <input data-value="nameVal" data-change="onName" placeholder="First and last" style="width:100%;border:1px solid rgba(16,25,46,.16);border-radius:12px;padding:15px 16px;font-size:16px;color:#10192e;outline:none;">
+            </label>
+            <label style="display:block;">
+              <span style="display:block;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#7a869e;margin-bottom:7px;">Teen's first name</span>
+              <input data-value="teenVal" data-change="onTeen" placeholder="So we can address the report" style="width:100%;border:1px solid rgba(16,25,46,.16);border-radius:12px;padding:15px 16px;font-size:16px;color:#10192e;outline:none;">
+            </label>
+            <label style="display:block;">
+              <span style="display:block;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#7a869e;margin-bottom:7px;">Email</span>
+              <input data-value="emailVal" data-change="onEmail" placeholder="you@email.com" style="width:100%;border:1px solid rgba(16,25,46,.16);border-radius:12px;padding:15px 16px;font-size:16px;color:#10192e;outline:none;">
+            </label>
+            <label style="display:block;">
+              <span style="display:block;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#7a869e;margin-bottom:7px;">Mobile number</span>
+              <input data-value="phoneVal" data-change="onPhone" placeholder="(555) 000-0000" style="width:100%;border:1px solid rgba(16,25,46,.16);border-radius:12px;padding:15px 16px;font-size:16px;color:#10192e;outline:none;">
+            </label>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:22px;">
+            <span style="width:26px;height:26px;border-radius:8px;background:rgba(31,157,107,.11);flex-shrink:0;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#1f9d6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg></span>
+            <span style="font-size:13.5px;color:#7a869e;">One report, one follow-up. No list swapping, no drip spam.</span>
+          </div>
+
+          <sc-if data-if="contactError">
+            <p style="margin:0 0 14px;font-size:14px;color:#b4483f;font-weight:600;">Add a name and a working email and we will send the read.</p>
+          </sc-if>
+
+          <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
+            <div data-click="submitContact" style="cursor:pointer;background:linear-gradient(120deg,#2f5fe0,#7a5cf0);color:#fff;font-weight:600;font-size:16px;padding:16px 30px;border-radius:11px;box-shadow:0 10px 28px rgba(47,95,224,.24);">Show the archetype &rarr;</div>
+            <span data-click="skipContact" style="font-size:14.5px;color:#7a869e;cursor:pointer;">Skip, just show the result</span>
+          </div>
+
+          <div style="margin-top:26px;padding-top:18px;border-top:1px solid rgba(16,25,46,.08);">
+            <span data-click="back" style="font-size:14px;color:#7a869e;cursor:pointer;">&larr; Back</span>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if data-if="atResult">
+        <div style="animation:riseIn .5s ease both;">
+
+          <sc-if data-if="flagged">
+            <div style="background:#fff;border:1px solid rgba(180,72,63,.35);border-left:4px solid #b4483f;border-radius:16px;padding:24px 26px;margin-bottom:18px;">
+              <div style="font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#b4483f;margin-bottom:10px;">Before your result</div>
+              <p style="margin:0;font-size:16px;color:#4a5875;line-height:1.6;">Based on one of your answers, the program may not be a fit right now. We only guarantee a shipped venture, and that requires a teen who turns up. Your archetype read is below regardless, and if you want a second opinion the assessment call is the place to have it.</p>
+            </div>
+          </sc-if>
+
+          <div style="background:#fff;border:1px solid rgba(16,25,46,.1);border-radius:20px;padding:clamp(24px,3.6vw,44px);box-shadow:0 14px 44px rgba(16,25,46,.08);">
+
+            <sc-if data-if="isOperator">
+              <div>
+                <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+                  <span style="width:52px;height:52px;border-radius:14px;background:rgba(47,95,224,.13);display:block;flex-shrink:0;"></span>
+                  <h2 style="font-size:clamp(30px,4.4vw,46px);letter-spacing:-.03em;line-height:1;margin:0;">The Operator</h2>
+                </div>
+                <p style="font-size:18px;color:#10192e;line-height:1.6;margin:0 0 20px;text-wrap:pretty;">This is the teenager who cannot leave a broken process alone. Give them <span data-text="interestLabel"></span> and within a month there is a system behind it that runs better than the adults' version. They are not short on drive, they are short on a problem big enough to deserve it.</p>
+                <div style="background:#f4f7fc;border-radius:14px;padding:20px 22px;margin-bottom:16px;">
+                  <div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7a869e;margin-bottom:8px;">What Operators ship in 12 weeks</div>
+                  <p style="margin:0;font-size:16px;color:#4a5875;line-height:1.6;">The booking and follow-up system, the kind that recovered twelve hours a week for a family business. Real customers, real money, running without them.</p>
+                </div>
+                <div style="border:1px solid rgba(180,72,63,.28);border-radius:14px;padding:20px 22px;margin-bottom:22px;">
+                  <div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#b4483f;margin-bottom:8px;">Where Operators stall</div>
+                  <p style="margin:0;font-size:16px;color:#4a5875;line-height:1.6;">They polish instead of launching. There is always one more feature. Our mentors force the ship date and hold it.</p>
+                </div>
+                <p style="font-size:16px;color:#10192e;font-weight:600;margin:0 0 22px;line-height:1.5;">Operators are a fit for roughly 2 of the 6 seats in each cohort. A discovery call is where we confirm it and scope their first venture.</p>
+              </div>
+            </sc-if>
+
+            <sc-if data-if="isInventor">
+              <div>
+                <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+                  <span style="width:52px;height:52px;border-radius:50%;background:rgba(122,92,240,.15);display:block;flex-shrink:0;"></span>
+                  <h2 style="font-size:clamp(30px,4.4vw,46px);letter-spacing:-.03em;line-height:1;margin:0;">The Inventor</h2>
+                </div>
+                <p style="font-size:18px;color:#10192e;line-height:1.6;margin:0 0 20px;text-wrap:pretty;">Ideas arrive faster than they can be finished. Point this teen at <span data-text="interestLabel"></span> and they will have three prototypes and no launch. The talent is obvious. The missing piece is somebody who makes them pick one and put it in front of strangers.</p>
+                <div style="background:#f4f7fc;border-radius:14px;padding:20px 22px;margin-bottom:16px;">
+                  <div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7a869e;margin-bottom:8px;">What Inventors ship in 12 weeks</div>
+                  <p style="margin:0;font-size:16px;color:#4a5875;line-height:1.6;">A product other people actually use. The study assistant 300 classmates were on before finals started as exactly this archetype.</p>
+                </div>
+                <div style="border:1px solid rgba(180,72,63,.28);border-radius:14px;padding:20px 22px;margin-bottom:22px;">
+                  <div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#b4483f;margin-bottom:8px;">Where Inventors stall</div>
+                  <p style="margin:0;font-size:16px;color:#4a5875;line-height:1.6;">Week five, when the new idea looks better than the current one. We make them finish the first one anyway.</p>
+                </div>
+                <p style="font-size:16px;color:#10192e;font-weight:600;margin:0 0 22px;line-height:1.5;">Inventors are a fit for roughly 2 of the 6 seats in each cohort. A discovery call is where we confirm it and scope their first venture.</p>
+              </div>
+            </sc-if>
+
+            <sc-if data-if="isAdvocate">
+              <div>
+                <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+                  <span style="width:52px;height:52px;border-radius:14px;background:rgba(31,157,107,.15);transform:rotate(45deg);display:block;flex-shrink:0;"></span>
+                  <h2 style="font-size:clamp(30px,4.4vw,46px);letter-spacing:-.03em;line-height:1;margin:0;">The Advocate</h2>
+                </div>
+                <p style="font-size:18px;color:#10192e;line-height:1.6;margin:0 0 20px;text-wrap:pretty;">Nothing this teen does stays personal for long. Interest in <span data-text="interestLabel"></span> turns into a group, a cause, or a campaign to get everyone else involved. They already have the hardest thing to teach, which is caring out loud. What they lack is a tool that makes the caring scale.</p>
+                <div style="background:#f4f7fc;border-radius:14px;padding:20px 22px;margin-bottom:16px;">
+                  <div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7a869e;margin-bottom:8px;">What Advocates ship in 12 weeks</div>
+                  <p style="margin:0;font-size:16px;color:#4a5875;line-height:1.6;">Something live with a real organization. The volunteer matching app running for a community group is the shape this takes.</p>
+                </div>
+                <div style="border:1px solid rgba(180,72,63,.28);border-radius:14px;padding:20px 22px;margin-bottom:22px;">
+                  <div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#b4483f;margin-bottom:8px;">Where Advocates stall</div>
+                  <p style="margin:0;font-size:16px;color:#4a5875;line-height:1.6;">They wait for permission from the organization. We teach them to build the thing first and bring it to the table finished.</p>
+                </div>
+                <p style="font-size:16px;color:#10192e;font-weight:600;margin:0 0 22px;line-height:1.5;">Advocates are a fit for roughly 1 of the 6 seats in each cohort. A discovery call is where we confirm it and scope their first venture.</p>
+              </div>
+            </sc-if>
+
+            <sc-if data-if="isAnalyst">
+              <div>
+                <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+                  <span style="width:52px;height:52px;border-radius:8px;background:rgba(16,25,46,.11);display:block;flex-shrink:0;"></span>
+                  <h2 style="font-size:clamp(30px,4.4vw,46px);letter-spacing:-.03em;line-height:1;margin:0;">The Analyst</h2>
+                </div>
+                <p style="font-size:18px;color:#10192e;line-height:1.6;margin:0 0 20px;text-wrap:pretty;">This teen reads the primary source. A passing interest in <span data-text="interestLabel"></span> becomes a spreadsheet, a ranking, and a strong opinion they will defend against an adult. Depth was never their problem; shipping before they feel finished is, so that is what we train.</p>
+                <div style="background:#f4f7fc;border-radius:14px;padding:20px 22px;margin-bottom:16px;">
+                  <div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7a869e;margin-bottom:8px;">What Analysts ship in 12 weeks</div>
+                  <p style="margin:0;font-size:16px;color:#4a5875;line-height:1.6;">An AI agent or research tool that answers a question nobody else bothered to answer properly, published where the field can see it.</p>
+                </div>
+                <div style="border:1px solid rgba(180,72,63,.28);border-radius:14px;padding:20px 22px;margin-bottom:22px;">
+                  <div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#b4483f;margin-bottom:8px;">Where Analysts stall</div>
+                  <p style="margin:0;font-size:16px;color:#4a5875;line-height:1.6;">Research becomes the hiding place. We cap the reading and move them into build week whether they feel ready or not.</p>
+                </div>
+                <p style="font-size:16px;color:#10192e;font-weight:600;margin:0 0 22px;line-height:1.5;">Analysts are a fit for roughly 1 of the 6 seats in each cohort. A discovery call is where we confirm it and scope their first venture.</p>
+              </div>
+            </sc-if>
+
+            <sc-if data-if="isSkeptic">
+              <div>
+                <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+                  <span style="width:52px;height:52px;border-radius:50%;background:rgba(180,72,63,.13);display:block;flex-shrink:0;"></span>
+                  <h2 style="font-size:clamp(30px,4.4vw,46px);letter-spacing:-.03em;line-height:1;margin:0;">The Skeptic</h2>
+                </div>
+                <p style="font-size:18px;color:#10192e;line-height:1.6;margin:0 0 20px;text-wrap:pretty;">High horsepower, no target. This teen is not lazy, they are unconvinced, and school has given them nothing worth switching on for. You mentioned <span data-text="interestLabel"></span>, which is the only place the engine currently turns over. That is the opening.</p>
+                <div style="background:#f4f7fc;border-radius:14px;padding:20px 22px;margin-bottom:16px;">
+                  <div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7a869e;margin-bottom:8px;">What Skeptics ship in 12 weeks</div>
+                  <p style="margin:0;font-size:16px;color:#4a5875;line-height:1.6;">Whatever they choose, which is the point. This is the most common archetype we see, and the one that converts hardest once the project is genuinely theirs.</p>
+                </div>
+                <div style="border:1px solid rgba(180,72,63,.28);border-radius:14px;padding:20px 22px;margin-bottom:22px;">
+                  <div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#b4483f;margin-bottom:8px;">Where Skeptics stall</div>
+                  <p style="margin:0;font-size:16px;color:#4a5875;line-height:1.6;">They stall in week one if anybody hands them the idea, so we spend the first two weeks getting them to name it themselves, and then it holds.</p>
+                </div>
+                <p style="font-size:16px;color:#10192e;font-weight:600;margin:0 0 22px;line-height:1.5;">Skeptics are a fit for roughly 2 of the 6 seats in each cohort. A discovery call is where we confirm it and scope their first venture.</p>
+              </div>
+            </sc-if>
+
+            <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+              <a href="#enroll" style="background:linear-gradient(120deg,#2f5fe0,#7a5cf0);color:#fff;font-weight:600;font-size:16px;padding:16px 30px;border-radius:11px;display:block;box-shadow:0 10px 28px rgba(47,95,224,.24);">Book a discovery call</a>
+              <span data-click="restart" style="font-size:15px;color:#7a869e;cursor:pointer;">Start over</span>
+            </div>
+          </div>
+
+          <div style="background:#10192e;color:#fff;border-radius:20px;padding:clamp(24px,3.4vw,36px);margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;align-items:center;">
+            <div>
+              <h3 style="font-size:23px;letter-spacing:-.02em;line-height:1.2;margin:0 0 10px;color:#fff;">Get the two-page archetype breakdown.</h3>
+              <p style="margin:0;font-size:15.5px;color:#a8b4cc;line-height:1.6;">How they learn, where they stall, and what they should build first. Sent to your inbox, no call required.</p>
+            </div>
+            <div>
+              <sc-if data-if="notSent">
+                <div>
+                  <input data-value="emailVal" data-change="onEmail" placeholder="you@email.com" style="width:100%;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);border-radius:11px;padding:15px 16px;font-size:15.5px;color:#fff;outline:none;margin-bottom:10px;">
+                  <div data-click="sendReport" style="cursor:pointer;background:#fff;color:#10192e;font-weight:700;font-size:15.5px;padding:15px 20px;border-radius:11px;text-align:center;">Email me the report</div>
+                  <p style="font-size:12.5px;color:#7c89a3;margin:10px 0 0;">One email with the report. Unsubscribe any time.</p>
+                </div>
+              </sc-if>
+              <sc-if data-if="sent">
+                <div style="animation:riseIn .4s ease both;background:rgba(31,157,107,.14);border:1px solid rgba(31,157,107,.4);border-radius:12px;padding:20px;">
+                  <div style="font-weight:700;font-size:16px;color:#fff;margin-bottom:6px;">On its way.</div>
+                  <p style="margin:0;font-size:14.5px;color:#a8b4cc;line-height:1.5;">Check your inbox in a minute. If the assessment makes sense after reading it, the calendar link is in the same email.</p>
+                </div>
+              </sc-if>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <section style="padding:clamp(54px,7vw,92px) 0;">
+    <div style="max-width:820px;margin:0 auto;padding:0 clamp(16px,4.5vw,24px);">
+      <div style="text-align:center;margin-bottom:40px;">
+        <h2 style="font-size:clamp(27px,3.6vw,42px);line-height:1.1;letter-spacing:-.025em;font-weight:700;margin:0;">Questions and answers.</h2>
+      </div>
+
+      <div style="border-top:1px solid rgba(16,25,46,.1);">
+        <div style="border-bottom:1px solid rgba(16,25,46,.1);">
+          <div data-click="t1" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 4px;cursor:pointer;font-size:17.5px;font-weight:600;letter-spacing:-.01em;" style-hover="color:#2f5fe0;">
+            Is this instead of college prep?
+            <span style="font-size:22px;color:#2f5fe0;font-weight:400;line-height:1;"><span data-text="s1"></span></span>
+          </div>
+          <sc-if data-if="o1">
+            <p style="margin:0;padding:0 4px 22px;font-size:16px;color:#4a5875;line-height:1.6;max-width:66ch;">No, it is complementary. The build is the passion project consultants charge five figures to invent, except your teen actually makes it. Whatever happens to college, they walk into applications holding the real thing.</p>
+          </sc-if>
+        </div>
+        <div style="border-bottom:1px solid rgba(16,25,46,.1);">
+          <div data-click="t2" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 4px;cursor:pointer;font-size:17.5px;font-weight:600;letter-spacing:-.01em;" style-hover="color:#2f5fe0;">
+            My teen already uses ChatGPT for everything. Isn't that the problem?
+            <span style="font-size:22px;color:#2f5fe0;font-weight:400;line-height:1;"><span data-text="s2"></span></span>
+          </div>
+          <sc-if data-if="o2">
+            <p style="margin:0;padding:0 4px 22px;font-size:16px;color:#4a5875;line-height:1.6;max-width:66ch;">That habit is the raw material. Right now it points at avoiding work. Twelve weeks from now it points at producing it, and they can explain every decision in the build because the decisions were theirs.</p>
+          </sc-if>
+        </div>
+        <div style="border-bottom:1px solid rgba(16,25,46,.1);">
+          <div data-click="t3" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 4px;cursor:pointer;font-size:17.5px;font-weight:600;letter-spacing:-.01em;" style-hover="color:#2f5fe0;">
+            Can't they just learn this free online?
+            <span style="font-size:22px;color:#2f5fe0;font-weight:400;line-height:1;"><span data-text="s3"></span></span>
+          </div>
+          <sc-if data-if="o3">
+            <p style="margin:0;padding:0 4px 22px;font-size:16px;color:#4a5875;line-height:1.6;max-width:66ch;">A rare, self-driven teenager will. For everyone else, and you already know which one yours is on a Tuesday night, the finishing is the hard part. Structure, a live mentor, and a real deadline are what turn good intentions into a running venture.</p>
+          </sc-if>
+        </div>
+        <div style="border-bottom:1px solid rgba(16,25,46,.1);">
+          <div data-click="t4" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 4px;cursor:pointer;font-size:17.5px;font-weight:600;letter-spacing:-.01em;" style-hover="color:#2f5fe0;">
+            Will they actually stick with it for 12 weeks?
+            <span style="font-size:22px;color:#2f5fe0;font-weight:400;line-height:1;"><span data-text="s4"></span></span>
+          </div>
+          <sc-if data-if="o4">
+            <p style="margin:0;padding:0 4px 22px;font-size:16px;color:#4a5875;line-height:1.6;max-width:66ch;">They pick the venture, so it is theirs. Then the structure holds: a small cohort that notices when they are gone, a mentor who knows their name, and a launch date on the calendar.</p>
+          </sc-if>
+        </div>
+        <div style="border-bottom:1px solid rgba(16,25,46,.1);">
+          <div data-click="t5" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 4px;cursor:pointer;font-size:17.5px;font-weight:600;letter-spacing:-.01em;" style-hover="color:#2f5fe0;">
+            They're 13. Is it too early to start?
+            <span style="font-size:22px;color:#2f5fe0;font-weight:400;line-height:1;"><span data-text="s5"></span></span>
+          </div>
+          <sc-if data-if="o5">
+            <p style="margin:0;padding:0 4px 22px;font-size:16px;color:#4a5875;line-height:1.6;max-width:66ch;">It is the best age to start. The habit is still forming, they can be mentored like adults, and every build from here compounds. By the time applications matter, they are years ahead.</p>
+          </sc-if>
+        </div>
+        <div style="border-bottom:1px solid rgba(16,25,46,.1);">
+          <div data-click="t6" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 4px;cursor:pointer;font-size:17.5px;font-weight:600;letter-spacing:-.01em;" style-hover="color:#2f5fe0;">
+            What does it cost?
+            <span style="font-size:22px;color:#2f5fe0;font-weight:400;line-height:1;"><span data-text="s6"></span></span>
+          </div>
+          <sc-if data-if="o6">
+            <p style="margin:0;padding:0 4px 22px;font-size:16px;color:#4a5875;line-height:1.6;max-width:66ch;">The first call is free. If your teen is a fit, we quote the 12-week cohort on that call, once we know what they would be building.</p>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="enroll" style="padding:clamp(60px,8vw,104px) 0;background:#10192e;color:#fff;text-align:center;">
     <div style="max-width:820px;margin:0 auto;padding:0 clamp(16px,4.5vw,24px);">
       <h2 style="font-size:clamp(27px,3.6vw,42px);line-height:1.1;letter-spacing:-.025em;font-weight:700;margin:0 0 16px;color:#fff;text-wrap:balance;">The head start is only a head start if it happens now.</h2>
