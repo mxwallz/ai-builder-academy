@@ -31,6 +31,13 @@
   @keyframes riseIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
   @keyframes fadeIn{from{opacity:0}to{opacity:1}}
   @keyframes sweep{0%{transform:translateX(-100%)}100%{transform:translateX(320%)}}
+
+  @media (max-width:640px){
+    [data-m="cmprow"]{flex-direction:column!important;align-items:stretch!important;gap:10px!important;}
+    [data-m="cmparrow"]{transform:rotate(90deg);margin:2px auto!important;}
+    [data-m="cmpold"]{background:rgba(180,72,63,.05);border:1px solid rgba(180,72,63,.16);border-radius:14px;padding:14px 16px!important;}
+    [data-m="cmpnew"]{background:#ffffff;border:1px solid rgba(31,157,107,.28);border-radius:14px;padding:14px 16px!important;box-shadow:0 6px 18px rgba(16,25,46,.05);}
+  }
 </style>
 <style>
   sc-if{display:contents;}
@@ -103,46 +110,46 @@
       </div>
 
       <div style="max-width:940px;margin:0 auto;">
-        <div style="display:flex;flex-wrap:wrap;gap:clamp(10px,2.4vw,28px);align-items:center;padding:clamp(18px,3vw,26px) 0;border-top:1px solid rgba(16,25,46,.1);">
-          <div style="flex:1 1 230px;min-width:0;">
+        <div data-m="cmprow" style="display:flex;flex-wrap:wrap;gap:clamp(10px,2.4vw,28px);align-items:center;padding:clamp(18px,3vw,26px) 0;border-top:1px solid rgba(16,25,46,.1);">
+          <div data-m="cmpold" style="flex:1 1 230px;min-width:0;">
             <div style="font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#b4483f;margin-bottom:7px;">The old way</div>
             <div style="font-size:clamp(16px,2.1vw,19px);font-weight:600;letter-spacing:-.01em;color:#5c6880;margin-bottom:4px;">The same "spike" strategy</div>
             <p style="font-size:14.5px;color:#7a869e;margin:0;line-height:1.5;">The same prebuilt templates handed to every other student.</p>
           </div>
-          <span style="width:30px;height:30px;border-radius:50%;background:#10192e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <span data-m="cmparrow" style="width:30px;height:30px;border-radius:50%;background:#10192e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
             <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M13 6l6 6-6 6"></path></svg>
           </span>
-          <div style="flex:1 1 230px;min-width:0;">
+          <div data-m="cmpnew" style="flex:1 1 230px;min-width:0;">
             <div style="font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1f9d6b;margin-bottom:7px;">The new way</div>
             <div style="font-size:clamp(16px,2.1vw,19px);font-weight:700;letter-spacing:-.015em;color:#10192e;margin-bottom:4px;">A venture only your teen would build</div>
             <p style="font-size:14.5px;color:#4a5875;margin:0;line-height:1.5;">Scoped around what they are already obsessed with.</p>
           </div>
         </div>
-        <div style="display:flex;flex-wrap:wrap;gap:clamp(10px,2.4vw,28px);align-items:center;padding:clamp(18px,3vw,26px) 0;border-top:1px solid rgba(16,25,46,.1);">
-          <div style="flex:1 1 230px;min-width:0;">
+        <div data-m="cmprow" style="display:flex;flex-wrap:wrap;gap:clamp(10px,2.4vw,28px);align-items:center;padding:clamp(18px,3vw,26px) 0;border-top:1px solid rgba(16,25,46,.1);">
+          <div data-m="cmpold" style="flex:1 1 230px;min-width:0;">
             <div style="font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#b4483f;margin-bottom:7px;">The old way</div>
             <div style="font-size:clamp(16px,2.1vw,19px);font-weight:600;letter-spacing:-.01em;color:#5c6880;margin-bottom:4px;">Fill-in-the-blank essays</div>
             <p style="font-size:14.5px;color:#7a869e;margin:0;line-height:1.5;">ChatGPT drafts a better one in ninety seconds.</p>
           </div>
-          <span style="width:30px;height:30px;border-radius:50%;background:#10192e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <span data-m="cmparrow" style="width:30px;height:30px;border-radius:50%;background:#10192e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
             <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M13 6l6 6-6 6"></path></svg>
           </span>
-          <div style="flex:1 1 230px;min-width:0;">
+          <div data-m="cmpnew" style="flex:1 1 230px;min-width:0;">
             <div style="font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1f9d6b;margin-bottom:7px;">The new way</div>
             <div style="font-size:clamp(16px,2.1vw,19px);font-weight:700;letter-spacing:-.015em;color:#10192e;margin-bottom:4px;">Something live, with real users</div>
             <p style="font-size:14.5px;color:#4a5875;margin:0;line-height:1.5;">A working product strangers can open today.</p>
           </div>
         </div>
-        <div style="display:flex;flex-wrap:wrap;gap:clamp(10px,2.4vw,28px);align-items:center;padding:clamp(18px,3vw,26px) 0;border-top:1px solid rgba(16,25,46,.1);">
-          <div style="flex:1 1 230px;min-width:0;">
+        <div data-m="cmprow" style="display:flex;flex-wrap:wrap;gap:clamp(10px,2.4vw,28px);align-items:center;padding:clamp(18px,3vw,26px) 0;border-top:1px solid rgba(16,25,46,.1);">
+          <div data-m="cmpold" style="flex:1 1 230px;min-width:0;">
             <div style="font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#b4483f;margin-bottom:7px;">The old way</div>
             <div style="font-size:clamp(16px,2.1vw,19px);font-weight:600;letter-spacing:-.01em;color:#5c6880;margin-bottom:4px;">An acceptance letter, maybe</div>
             <p style="font-size:14.5px;color:#7a869e;margin:0;line-height:1.5;">Not guaranteed, and nobody knows what it is worth in five years.</p>
           </div>
-          <span style="width:30px;height:30px;border-radius:50%;background:#10192e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <span data-m="cmparrow" style="width:30px;height:30px;border-radius:50%;background:#10192e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
             <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M13 6l6 6-6 6"></path></svg>
           </span>
-          <div style="flex:1 1 230px;min-width:0;">
+          <div data-m="cmpnew" style="flex:1 1 230px;min-width:0;">
             <div style="font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1f9d6b;margin-bottom:7px;">The new way</div>
             <div style="font-size:clamp(16px,2.1vw,19px);font-weight:700;letter-spacing:-.015em;color:#10192e;margin-bottom:4px;">Proof that cannot expire</div>
             <p style="font-size:14.5px;color:#4a5875;margin:0;line-height:1.5;">It works on an application, and it works if there is no application.</p>
