@@ -827,5 +827,65 @@ if (document.readyState === 'loading') document.addEventListener('DOMContentLoad
 })();
 
 </script>
+<!-- Qualifier modal: CTA -> 4 questions -> book. BOOKING_URL TODO before launch. -->
+<div id="qmodal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(8,13,24,.78);backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:18px;">
+  <div style="background:#fff;border-radius:18px;max-width:520px;width:100%;padding:30px 30px 26px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.4);">
+    <div id="qm-close" style="position:absolute;top:14px;right:18px;cursor:pointer;font-size:26px;line-height:1;color:#9aa5ba;">&times;</div>
+    <div id="qm-progress" style="height:4px;background:rgba(16,25,46,.08);border-radius:100px;margin-bottom:22px;"><span id="qm-bar" style="display:block;height:100%;width:25%;background:linear-gradient(90deg,#2f5fe0,#7a5cf0);border-radius:100px;transition:width .3s ease;"></span></div>
+    <div id="qm-body"></div>
+  </div>
+</div>
+<script>
+(function(){
+  var BOOKING_URL = ""; /* TODO: paste Calendly/booking link */
+  var QS = [
+    {q:"What are you most worried about for your kid?", a:["They are not prepared for the AI economy","College may not be worth the cost","Hours lost to screens with nothing to show","Nothing specific, exploring options"]},
+    {q:"How committed is your teen to making something real?", a:["Very. They already build and tinker","Interested, needs structure","Honestly unsure"]},
+    {q:"This is a serious investment in your kid. If the fit is right, are you ready to move?", a:["Yes, ready now","Depends on the details","Just researching"]},
+    {q:"When could they start?", a:["This cohort","Next cohort","Not sure yet"]}
+  ];
+  var step = 0, ans = [];
+  var modal = document.getElementById('qmodal');
+  var body = document.getElementById('qm-body');
+  var bar = document.getElementById('qm-bar');
+  function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+  function render(){
+    bar.style.width = Math.min(((step)/QS.length)*100+25,100) + '%';
+    if (step < QS.length){
+      var s = QS[step];
+      var h = '<div style="font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#2f5fe0;margin-bottom:10px;">Question '+(step+1)+' of '+QS.length+'</div>'
+            + '<div style="font-size:20px;font-weight:750;color:#10192e;line-height:1.3;margin-bottom:18px;">'+esc(s.q)+'</div>';
+      s.a.forEach(function(opt,i){
+        h += '<div class="qm-opt" data-i="'+i+'" style="cursor:pointer;border:1px solid rgba(16,25,46,.14);border-radius:12px;padding:14px 16px;font-size:15.5px;color:#10192e;margin-bottom:10px;">'+esc(opt)+'</div>';
+      });
+      body.innerHTML = h;
+    } else {
+      var link = BOOKING_URL || '#enroll';
+      body.innerHTML =
+        '<div style="text-align:center;">'
+        + '<div style="font-size:22px;font-weight:750;color:#10192e;margin-bottom:10px;">One step left: book the call.</div>'
+        + '<p style="font-size:15.5px;color:#5c6880;margin:0 0 20px;">We read every application and reply either way. Your answers come with you to the call.</p>'
+        + '<a href="'+link+'" '+(BOOKING_URL?'target="_blank" rel="noopener"':'')+' id="qm-book" style="display:inline-block;background:linear-gradient(120deg,#2f5fe0,#7a5cf0);color:#fff;font-weight:700;font-size:16.5px;padding:15px 32px;border-radius:11px;text-decoration:none;">Book the call</a>'
+        + '</div>';
+      if (!BOOKING_URL){
+        document.getElementById('qm-book').addEventListener('click', function(){ close(); });
+      }
+    }
+  }
+  function open(){ step = 0; ans = []; modal.style.display = 'flex'; render(); }
+  function close(){ modal.style.display = 'none'; }
+  document.getElementById('qm-close').addEventListener('click', close);
+  modal.addEventListener('click', function(e){ if (e.target === modal) close(); });
+  body.addEventListener('click', function(e){
+    var t = e.target.closest('.qm-opt');
+    if (t){ ans.push(QS[step].a[+t.getAttribute('data-i')]); step++; render(); }
+  });
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href="#enroll"], a[href$="#enroll"]');
+    if (a && !a.id.match(/qm-book/)){ e.preventDefault(); open(); }
+  }, true);
+})();
+</script>
+
 </body>
 </html>
